@@ -1,6 +1,6 @@
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
-import dev.gitlive.firebase.firebase
+import dev.gitlivecgangaro.firebase.firebase
 import kotlinx.serialization.Serializable
 
 private typealias NativeServerValue = firebase.database.ServerValue

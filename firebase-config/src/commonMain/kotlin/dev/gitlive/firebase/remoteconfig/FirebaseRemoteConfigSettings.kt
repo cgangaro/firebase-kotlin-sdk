@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 private const val CONNECTION_TIMEOUT_IN_SECONDS = 60L
 

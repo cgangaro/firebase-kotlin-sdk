@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
 /** Helper method to perform an update operation in Android and JS. */
 internal fun <T, K, R> performUpdate(

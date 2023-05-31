@@ -2,9 +2,9 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.await
 import kotlinx.coroutines.channels.awaitClose
@@ -16,10 +16,10 @@ import kotlinx.serialization.SerializationStrategy
 import kotlin.js.json
 
 actual val Firebase.firestore get() =
-    rethrow { dev.gitlive.firebase.firestore; FirebaseFirestore(firebase.firestore()) }
+    rethrow { dev.gitlivecgangaro.firebase.firestore; FirebaseFirestore(firebase.firestore()) }
 
 actual fun Firebase.firestore(app: FirebaseApp) =
-    rethrow { dev.gitlive.firebase.firestore; FirebaseFirestore(firebase.app().firestore()) }
+    rethrow { dev.gitlivecgangaro.firebase.firestore; FirebaseFirestore(firebase.app().firestore()) }
 
 /** Helper method to perform an update operation. */
 private fun <R> performUpdate(
@@ -408,7 +408,7 @@ actual class SnapshotMetadata(val js: firebase.firestore.SnapshotMetadata) {
 }
 
 actual class FieldPath private constructor(val js: firebase.firestore.FieldPath) {
-    actual constructor(vararg fieldNames: String) : this(dev.gitlive.firebase.firestore.rethrow {
+    actual constructor(vararg fieldNames: String) : this(dev.gitlivecgangaro.firebase.firestore.rethrow {
         js("Reflect").construct(firebase.firestore.FieldPath, fieldNames).unsafeCast<firebase.firestore.FieldPath>()
     })
     actual val documentId: FieldPath get() = FieldPath(firebase.firestore.FieldPath.documentId)
@@ -477,7 +477,7 @@ actual enum class ChangeType(internal val jsString : String) {
     REMOVED("removed");
 }
 
-inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlive.firebase.firestore.rethrow { function() }
+inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlivecgangaro.firebase.firestore.rethrow { function() }
 
 inline fun <R> rethrow(function: () -> R): R {
     try {

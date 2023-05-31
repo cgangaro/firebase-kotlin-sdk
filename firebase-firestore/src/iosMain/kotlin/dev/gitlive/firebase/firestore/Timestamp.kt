@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
 import cocoapods.FirebaseFirestore.FIRTimestamp
 import kotlinx.serialization.Serializable

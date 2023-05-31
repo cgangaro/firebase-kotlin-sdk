@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.gitlive.firebase.crashlytics">
+    package="dev.gitlivecgangaro.firebase.crashlytics">
 
     <application android:usesCleartextTraffic="true" />
 </manifest>

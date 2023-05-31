@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
 import kotlinx.serialization.Serializable
 

@@ -2,25 +2,25 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.functions
+package dev.gitlivecgangaro.firebase.functions
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.coroutines.await
 import kotlinx.serialization.DeserializationStrategy
 import kotlinx.serialization.SerializationStrategy
 import kotlin.js.json
 
 actual val Firebase.functions: FirebaseFunctions
-    get() = rethrow { dev.gitlive.firebase.functions; FirebaseFunctions(firebase.functions()) }
+    get() = rethrow { dev.gitlivecgangaro.firebase.functions; FirebaseFunctions(firebase.functions()) }
 
 actual fun Firebase.functions(region: String) =
-    rethrow { dev.gitlive.firebase.functions; FirebaseFunctions(firebase.app().functions(region)) }
+    rethrow { dev.gitlivecgangaro.firebase.functions; FirebaseFunctions(firebase.app().functions(region)) }
 
 actual fun Firebase.functions(app: FirebaseApp) =
-    rethrow { dev.gitlive.firebase.functions; FirebaseFunctions(firebase.functions(app.js)) }
+    rethrow { dev.gitlivecgangaro.firebase.functions; FirebaseFunctions(firebase.functions(app.js)) }
 
 actual fun Firebase.functions(app: FirebaseApp, region: String) =
-    rethrow { dev.gitlive.firebase.functions; FirebaseFunctions(app.js.functions(region)) }
+    rethrow { dev.gitlivecgangaro.firebase.functions; FirebaseFunctions(app.js.functions(region)) }
 
 actual class FirebaseFunctions internal constructor(val js: firebase.functions.Functions) {
     actual fun httpsCallable(name: String, timeout: Long?) =
@@ -56,7 +56,7 @@ actual class HttpsCallableResult constructor(val js: firebase.functions.HttpsCal
 
 actual open class FirebaseFunctionsException(code: String?, cause: Throwable): FirebaseException(code, cause)
 
-inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlive.firebase.functions.rethrow { function() }
+inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlivecgangaro.firebase.functions.rethrow { function() }
 
 inline fun <R> rethrow(function: () -> R): R {
     try {

@@ -1,4 +1,4 @@
-package dev.gitlive.firebase
+package dev.gitlivecgangaro.firebase
 
 import kotlinx.serialization.InheritableSerialInfo
 

@@ -1,8 +1,8 @@
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
-import dev.gitlive.firebase.FirebaseEncoder
-import dev.gitlive.firebase.SpecialValueSerializer
-import dev.gitlive.firebase.firestore.DoubleAsTimestampSerializer.serverTimestamp
+import dev.gitlivecgangaro.firebase.FirebaseEncoder
+import dev.gitlivecgangaro.firebase.SpecialValueSerializer
+import dev.gitlivecgangaro.firebase.firestore.DoubleAsTimestampSerializer.serverTimestamp
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 

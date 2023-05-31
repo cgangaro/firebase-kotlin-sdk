@@ -2,12 +2,12 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseOptions
-import dev.gitlive.firebase.apps
-import dev.gitlive.firebase.initialize
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseOptions
+import dev.gitlivecgangaro.firebase.apps
+import dev.gitlivecgangaro.firebase.initialize
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay

@@ -1,6 +1,6 @@
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.coroutines.flow.first
 import kotlinx.serialization.*
 import kotlin.test.*

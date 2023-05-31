@@ -1,7 +1,7 @@
-package dev.gitlive.firebase.perf.metrics
+package dev.gitlivecgangaro.firebase.perf.metrics
 
-import dev.gitlive.firebase.firebase
-import dev.gitlive.firebase.perf.rethrow
+import dev.gitlivecgangaro.firebase.firebase
+import dev.gitlivecgangaro.firebase.perf.rethrow
 
 
 actual class Trace internal constructor(private val js: firebase.performance.PerformanceTrace) {

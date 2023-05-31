@@ -1,5 +1,5 @@
 @file:JvmName("androidTimestamp")
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
 import kotlinx.serialization.Serializable
 

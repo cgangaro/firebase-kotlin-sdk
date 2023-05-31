@@ -1,7 +1,7 @@
-package dev.gitlive.firebase.perf.metrics
+package dev.gitlivecgangaro.firebase.perf.metrics
 
 import com.google.firebase.perf.metrics.Trace
-import dev.gitlive.firebase.perf.session.PerfSession
+import dev.gitlivecgangaro.firebase.perf.session.PerfSession
 
 actual class Trace internal constructor(private val android: Trace) {
 

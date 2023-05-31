@@ -1,9 +1,9 @@
-package dev.gitlive.firebase.crashlytics
+package dev.gitlivecgangaro.firebase.crashlytics
 
 import com.google.firebase.FirebaseException
 import com.google.firebase.crashlytics.CustomKeysAndValues.Builder
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
 
 actual val Firebase.crashlytics get() =
     FirebaseCrashlytics(com.google.firebase.crashlytics.FirebaseCrashlytics.getInstance())

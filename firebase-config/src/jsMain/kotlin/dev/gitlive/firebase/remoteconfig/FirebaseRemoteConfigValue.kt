@@ -1,6 +1,6 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
-import dev.gitlive.firebase.firebase
+import dev.gitlivecgangaro.firebase.firebase
 
 actual class FirebaseRemoteConfigValue(val js: firebase.remoteConfig.Value) {
     actual fun asBoolean(): Boolean = rethrow { js.asBoolean() }

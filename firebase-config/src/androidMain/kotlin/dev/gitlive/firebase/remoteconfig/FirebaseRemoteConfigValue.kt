@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigValue as AndroidFirebaseRemoteConfigValue

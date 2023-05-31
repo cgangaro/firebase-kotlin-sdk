@@ -1,8 +1,8 @@
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
-import dev.gitlive.firebase.FirebaseDecoder
-import dev.gitlive.firebase.FirebaseEncoder
-import dev.gitlive.firebase.SpecialValueSerializer
+import dev.gitlivecgangaro.firebase.FirebaseDecoder
+import dev.gitlivecgangaro.firebase.FirebaseEncoder
+import dev.gitlivecgangaro.firebase.SpecialValueSerializer
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
 

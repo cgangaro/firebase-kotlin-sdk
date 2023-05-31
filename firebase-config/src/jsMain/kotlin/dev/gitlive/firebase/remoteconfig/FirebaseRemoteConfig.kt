@@ -1,20 +1,20 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.FirebaseException
-import dev.gitlive.firebase.firebase
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.FirebaseException
+import dev.gitlivecgangaro.firebase.firebase
 import kotlinx.coroutines.await
 import kotlin.js.json
 
 actual val Firebase.remoteConfig: FirebaseRemoteConfig
     get() = rethrow {
-        dev.gitlive.firebase.remoteConfig
+        dev.gitlivecgangaro.firebase.remoteConfig
         FirebaseRemoteConfig(firebase.remoteConfig())
     }
 
 actual fun Firebase.remoteConfig(app: FirebaseApp): FirebaseRemoteConfig = rethrow {
-    dev.gitlive.firebase.remoteConfig
+    dev.gitlivecgangaro.firebase.remoteConfig
     FirebaseRemoteConfig(firebase.remoteConfig(app.js))
 }
 

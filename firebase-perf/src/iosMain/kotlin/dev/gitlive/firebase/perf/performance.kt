@@ -1,10 +1,10 @@
-package dev.gitlive.firebase.perf
+package dev.gitlivecgangaro.firebase.perf
 
 import cocoapods.FirebasePerformance.FIRPerformance
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.FirebaseException
-import dev.gitlive.firebase.perf.metrics.Trace
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.FirebaseException
+import dev.gitlivecgangaro.firebase.perf.metrics.Trace
 
 actual val Firebase.performance get() =
     FirebasePerformance(FIRPerformance.sharedInstance())

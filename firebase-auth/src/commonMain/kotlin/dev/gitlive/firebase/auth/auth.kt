@@ -4,11 +4,11 @@
 
 @file:Suppress("EXTENSION_SHADOWED_BY_MEMBER")
 
-package dev.gitlive.firebase.auth
+package dev.gitlivecgangaro.firebase.auth
 
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.FirebaseException
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.FirebaseException
 import kotlinx.coroutines.flow.Flow
 
 expect val Firebase.auth: FirebaseAuth

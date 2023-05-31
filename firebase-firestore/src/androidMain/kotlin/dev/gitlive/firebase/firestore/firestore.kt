@@ -3,12 +3,12 @@
  */
 
 @file:JvmName("android")
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.MetadataChanges
 import com.google.firebase.firestore.SetOptions
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.runBlocking

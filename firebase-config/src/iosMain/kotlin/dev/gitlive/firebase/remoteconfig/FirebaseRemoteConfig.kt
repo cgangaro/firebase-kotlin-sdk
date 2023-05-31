@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfig
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigErrorDomain
@@ -8,10 +8,10 @@ import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigFetchAndActivateStatus
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigFetchStatus
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigSettings
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigSource
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.FirebaseException
-import dev.gitlive.firebase.app
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.FirebaseException
+import dev.gitlivecgangaro.firebase.app
 import kotlinx.coroutines.CompletableDeferred
 import platform.Foundation.NSError
 import platform.Foundation.timeIntervalSince1970

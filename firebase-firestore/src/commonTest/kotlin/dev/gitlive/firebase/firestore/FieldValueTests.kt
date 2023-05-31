@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

@@ -1,7 +1,7 @@
-package dev.gitlive.firebase
+package dev.gitlivecgangaro.firebase
 
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.initialize
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.initialize
 import kotlin.test.Test
 
 expect val context: Any

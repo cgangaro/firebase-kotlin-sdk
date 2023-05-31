@@ -2,19 +2,19 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.auth
+package dev.gitlivecgangaro.firebase.auth
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.coroutines.await
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 import kotlin.js.json
 
 actual val Firebase.auth
-    get() = rethrow { dev.gitlive.firebase.auth; FirebaseAuth(firebase.auth()) }
+    get() = rethrow { dev.gitlivecgangaro.firebase.auth; FirebaseAuth(firebase.auth()) }
 
 actual fun Firebase.auth(app: FirebaseApp) =
-    rethrow { dev.gitlive.firebase.auth; FirebaseAuth(firebase.auth(app.js)) }
+    rethrow { dev.gitlivecgangaro.firebase.auth; FirebaseAuth(firebase.auth(app.js)) }
 
 actual class FirebaseAuth internal constructor(val js: firebase.auth.Auth) {
 
@@ -142,7 +142,7 @@ actual open class FirebaseAuthUserCollisionException(code: String?, cause: Throw
 actual open class FirebaseAuthWebException(code: String?, cause: Throwable): FirebaseAuthException(code, cause)
 
 
-internal inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlive.firebase.auth.rethrow { function() }
+internal inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlivecgangaro.firebase.auth.rethrow { function() }
 
 private inline fun <R> rethrow(function: () -> R): R {
     try {

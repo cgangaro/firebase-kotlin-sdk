@@ -1,11 +1,11 @@
-package dev.gitlive.firebase.perf.metrics
+package dev.gitlivecgangaro.firebase.perf.metrics
 
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseOptions
-import dev.gitlive.firebase.apps
-import dev.gitlive.firebase.initialize
-import dev.gitlive.firebase.perf.FirebasePerformance
-import dev.gitlive.firebase.perf.performance
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseOptions
+import dev.gitlivecgangaro.firebase.apps
+import dev.gitlivecgangaro.firebase.initialize
+import dev.gitlivecgangaro.firebase.perf.FirebasePerformance
+import dev.gitlivecgangaro.firebase.perf.performance
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -17,10 +17,10 @@ class JsTraceTest {
     @BeforeTest
     fun initializeFirebase() {
         Firebase
-            .takeIf { Firebase.apps(dev.gitlive.firebase.perf.context).isEmpty() }
+            .takeIf { Firebase.apps(dev.gitlivecgangaro.firebase.perf.context).isEmpty() }
             ?.apply {
                 initialize(
-                    dev.gitlive.firebase.perf.context,
+                    dev.gitlivecgangaro.firebase.perf.context,
                     FirebaseOptions(
                         applicationId = "1:846484016111:ios:dd1f6688bad7af768c841a",
                         apiKey = "AIzaSyCK87dcMFhzCz_kJVs2cT2AVlqOTLuyWV0",

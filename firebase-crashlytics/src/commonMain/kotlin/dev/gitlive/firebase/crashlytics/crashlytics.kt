@@ -1,8 +1,8 @@
-package dev.gitlive.firebase.crashlytics
+package dev.gitlivecgangaro.firebase.crashlytics
 
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.FirebaseException
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.FirebaseException
 
 /** Returns the [FirebaseCrashlytics] instance of the default [FirebaseApp]. */
 expect val Firebase.crashlytics: FirebaseCrashlytics

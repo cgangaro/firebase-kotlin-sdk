@@ -1,11 +1,11 @@
-package dev.gitlive.firebase.crashlytics
+package dev.gitlivecgangaro.firebase.crashlytics
 
 import cocoapods.FirebaseCrashlytics.FIRCrashlytics
 import platform.Foundation.NSError
 import platform.Foundation.NSLocalizedDescriptionKey
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.FirebaseException
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.FirebaseException
 
 actual val Firebase.crashlytics get() =
     FirebaseCrashlytics(FIRCrashlytics.crashlytics())

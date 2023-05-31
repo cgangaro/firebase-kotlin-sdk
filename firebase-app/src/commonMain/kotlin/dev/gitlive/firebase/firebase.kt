@@ -4,7 +4,7 @@
 
 @file:JvmMultifileClass
 @file:JvmName("CommonKt")
-package dev.gitlive.firebase
+package dev.gitlivecgangaro.firebase
 
 import kotlin.jvm.JvmMultifileClass
 import kotlin.jvm.JvmName

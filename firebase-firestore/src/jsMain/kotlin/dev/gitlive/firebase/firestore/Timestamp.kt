@@ -1,6 +1,6 @@
-package dev.gitlive.firebase.firestore
+package dev.gitlivecgangaro.firebase.firestore
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.serialization.Serializable
 
 /** A base class that could be used to combine [Timestamp] and [Timestamp.ServerTimestamp] in the same field. */

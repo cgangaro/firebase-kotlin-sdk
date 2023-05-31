@@ -2,7 +2,7 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
 import com.google.android.gms.tasks.Task
 import com.google.firebase.database.ChildEventListener
@@ -11,11 +11,11 @@ import com.google.firebase.database.Logger
 import com.google.firebase.database.MutableData
 import com.google.firebase.database.Transaction
 import com.google.firebase.database.ValueEventListener
-import dev.gitlive.firebase.encode
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
-import dev.gitlive.firebase.database.ChildEvent.Type
-import dev.gitlive.firebase.decode
+import dev.gitlivecgangaro.firebase.encode
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.database.ChildEvent.Type
+import dev.gitlivecgangaro.firebase.decode
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.Flow

@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 expect class FirebaseRemoteConfigValue {
     fun asBoolean(): Boolean

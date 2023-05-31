@@ -3,14 +3,14 @@
  */
 
 @file:JvmName("android")
-package dev.gitlive.firebase.auth
+package dev.gitlivecgangaro.firebase.auth
 
 import com.google.firebase.auth.ActionCodeEmailInfo
 import com.google.firebase.auth.ActionCodeMultiFactorInfo
 import com.google.firebase.auth.ActionCodeResult.*
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
-import dev.gitlive.firebase.Firebase
-import dev.gitlive.firebase.FirebaseApp
+import dev.gitlivecgangaro.firebase.Firebase
+import dev.gitlivecgangaro.firebase.FirebaseApp
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow

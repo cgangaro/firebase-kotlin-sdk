@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigSource
 import cocoapods.FirebaseRemoteConfig.FIRRemoteConfigValue

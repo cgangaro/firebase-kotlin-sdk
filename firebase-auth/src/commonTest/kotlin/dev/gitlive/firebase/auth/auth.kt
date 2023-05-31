@@ -2,9 +2,9 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.auth
+package dev.gitlivecgangaro.firebase.auth
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlin.random.Random
 import kotlin.test.*
 

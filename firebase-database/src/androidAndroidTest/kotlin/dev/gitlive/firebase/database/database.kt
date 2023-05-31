@@ -3,7 +3,7 @@
  */
 
 @file:JvmName("tests")
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
 import androidx.test.platform.app.InstrumentationRegistry
 

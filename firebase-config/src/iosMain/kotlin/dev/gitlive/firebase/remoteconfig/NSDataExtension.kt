@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 import kotlinx.cinterop.addressOf
 import kotlinx.cinterop.usePinned

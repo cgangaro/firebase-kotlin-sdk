@@ -2,9 +2,9 @@
  * Copyright (c) 2020 GitLive Ltd.  Use of this source code is governed by the Apache 2.0 license.
  */
 
-package dev.gitlive.firebase.database
+package dev.gitlivecgangaro.firebase.database
 
-import dev.gitlive.firebase.*
+import dev.gitlivecgangaro.firebase.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
@@ -17,16 +17,16 @@ import kotlinx.serialization.SerializationStrategy
 import kotlin.js.Promise
 
 actual val Firebase.database
-    get() = rethrow { dev.gitlive.firebase.database; FirebaseDatabase(firebase.database()) }
+    get() = rethrow { dev.gitlivecgangaro.firebase.database; FirebaseDatabase(firebase.database()) }
 
 actual fun Firebase.database(app: FirebaseApp) =
-    rethrow { dev.gitlive.firebase.database; FirebaseDatabase(firebase.database(app.js)) }
+    rethrow { dev.gitlivecgangaro.firebase.database; FirebaseDatabase(firebase.database(app.js)) }
 
 actual fun Firebase.database(url: String) =
-    rethrow { dev.gitlive.firebase.database; FirebaseDatabase(firebase.app().database(url)) }
+    rethrow { dev.gitlivecgangaro.firebase.database; FirebaseDatabase(firebase.app().database(url)) }
 
 actual fun Firebase.database(app: FirebaseApp, url: String) =
-    rethrow { dev.gitlive.firebase.database; FirebaseDatabase(app.js.database(url)) }
+    rethrow { dev.gitlivecgangaro.firebase.database; FirebaseDatabase(app.js.database(url)) }
 
 actual class FirebaseDatabase internal constructor(val js: firebase.database.Database) {
     actual fun reference(path: String) = rethrow { DatabaseReference(js.ref(path)) }
@@ -179,7 +179,7 @@ actual class DatabaseException actual constructor(message: String?, cause: Throw
     constructor(error: dynamic) : this("${error.code ?: "UNKNOWN"}: ${error.message}", error.unsafeCast<Throwable>())
 }
 
-inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlive.firebase.database.rethrow { function() }
+inline fun <T, R> T.rethrow(function: T.() -> R): R = dev.gitlivecgangaro.firebase.database.rethrow { function() }
 
 inline fun <R> rethrow(function: () -> R): R {
     try {

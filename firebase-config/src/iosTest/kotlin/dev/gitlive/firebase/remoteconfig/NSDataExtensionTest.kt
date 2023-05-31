@@ -1,4 +1,4 @@
-package dev.gitlive.firebase.remoteconfig
+package dev.gitlivecgangaro.firebase.remoteconfig
 
 import platform.Foundation.NSString
 import platform.Foundation.NSUTF8StringEncoding

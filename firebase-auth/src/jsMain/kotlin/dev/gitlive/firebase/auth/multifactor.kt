@@ -1,6 +1,6 @@
-package dev.gitlive.firebase.auth
+package dev.gitlivecgangaro.firebase.auth
 
-import dev.gitlive.firebase.firebase
+import dev.gitlivecgangaro.firebase.firebase
 import kotlinx.coroutines.await
 import kotlin.js.Date
 

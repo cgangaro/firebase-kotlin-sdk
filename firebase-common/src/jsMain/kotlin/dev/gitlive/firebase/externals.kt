@@ -4,7 +4,7 @@
 
 @file:JsModule("firebase/compat/app")
 
-package dev.gitlive.firebase
+package dev.gitlivecgangaro.firebase
 
 import kotlin.js.Json
 import kotlin.js.Promise
